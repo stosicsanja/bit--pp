@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'Open+Sans' ;
+    src: url(/Open_Sans/openSans.ttf) format("truetype");
+}
+
+
+
+#one {
+    color: darkturquoise;
+    font-size: 20px;
+   /* font-family: 'Courier New', Courier, monospace;*/
+    font-family: 'Fjalla One';
+    text-transform:uppercase;
+    text-decoration:underline ;
+
+}
+
+
+#two {
+    color: rgb(0, 206, 209);
+    font-size: 25px;
+    font-style: oblique;
+    text-transform:lowercase;
+    text-decoration:line-through;
+    font-family: 'Open+Sans';
+}
+#three {
+ color:   #00ced1;
+ font-size: 30px;
+}
+
+span {
+    font-style: italic;
+    font-weight: 900;
+}
+
+#one {
+color: aliceblue;
+background-color: blueviolet;
+opacity: 0.3;
+letter-spacing: 5px;
+text-align: left;
+}
+
+#two {
+    color: brown;
+    background: rgba(255, 0, 0, 0.2);
+    line-height: 200%;
+    text-align: right;
+     }
+     
+#three {
+    color: darkgreen;
+    background-color: darkkhaki;
+    text-align: center;
+    
+}
+
+#quote-one {
+    font-family: 'Courier New', Courier, monospace;
+}
+#quote-two {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#quote-three {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul li a{
+    color: chocolate;
+    text-shadow: 10px 10px 10px black;
+    
+}
+
+#click:link{
+    color: red;
+}
+
+#visited:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active{
+    color: blue;
+}
+
+div > img{
+    opacity: 0.6;
+
+   /*background-color:rgba(0, 0,0, 0.6)*/
+
+} 
+
+
+    
+
+
+table, th, td{
+    border: 1px solid black;
+}     
+
+#col-one
+{
+    color:aliceblue;
+    background-color: blue;
+
+}
+#col-two
+{
+    color:hotpink;
+    background-color: navajowhite;
+
+}
+#col-three
+{
+    background-color: rgb(96, 138, 113);
+}
+
+#col-four
+{
+    background-color: rgb(96, 138, 0);
+}
+
+#col-five
+{
+    background-color: rgb(96, 0, 113);
+}
