@@ -1,0 +1,94 @@
+#first-u {
+    list-style-type: circle;
+}
+#second-s {
+    list-style-type: square;
+}
+#first-o {
+    list-style-type: upper-alpha;
+}
+#second-o {
+    list-style-type: upper-roman;
+}
+
+#second-task {
+    list-style-image: url(https://www.w3schools.com/cssref/sqpurple.gif);
+    width: 200px;
+
+}
+#second-u2 {
+    list-style-position: inside;
+}
+table {
+   margin: 0 auto;
+   padding: 10px auto;
+   width: 400px;
+   margin-bottom: 50px;
+}
+
+table th {
+    background-color: red;
+    color: beige;
+}
+table {
+    height: 500px;
+}
+
+table tr td:nth-child(2) {
+    background-image: url(/download.jpg);
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+table tr:nth-child(odd) {
+    background-color: gray;
+}
+table tr:hover{
+    background-color: yellow;
+}
+
+form{
+    width: 320px;
+    height: 400px;
+    border-radius: 10px;
+    background-color:rgba(219, 219, 219, 0.959);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-weight: lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+   text-align: center;
+    color: rgb(20, 20, 53);
+    border-bottom: 1px solid rgb(175, 171, 171);
+    width: 240px;
+    padding-bottom: 7px;
+}
+span{
+    color: goldenrod;
+}
+label {
+  font-weight: 400;  
+  margin-bottom: -10px;
+}
+ input{
+    padding: 5px 3px;
+    border: none;
+    box-shadow: 0 0 5px 1px gray;
+    width: 240px;
+}
+input:hover{
+    cursor: text;
+}
+button{
+    background-color: rgb(197, 24, 24);
+    color: aliceblue;
+    height: 30px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+button:hover{
+cursor: url("/114415.png");}
