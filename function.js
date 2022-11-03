@@ -62,8 +62,30 @@ is 5 the program should draw:
 * *
 * *
 * *
-*****
+*****/*
 
+function squarePrint(num) {
+    var string = "";
+    for (i = 0; i < num; i++){
+        for (j = 0; j < num; j++) {
+            if(i===0 || i=== num-1){
+                string += "*";
+            }else{
+                if(j ===0 || j === num-1){
+                    string += "*";
+                }else{
+                    string += " ";
+                }
+            }
+        }
+        string += "\n";
+    }
+    return string;
+}
+
+console.log(squarePrint(5));
+
+/*
 //6. Write a program that draws a horizontal chart representing three given values. For
 example, if values are 5, 3, and 7, the program should draw:
 * * * * *
