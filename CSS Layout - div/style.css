@@ -1,0 +1,60 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+.first-div {
+    background-color: cadetblue;
+
+}
+
+.second-div {
+    background-color:blueviolet;
+}
+.third-div {
+    background-color:darkolivegreen;
+}
+
+.first-div2 {
+    background-color: cadetblue;
+    position: relative;
+}
+
+.second-div2 {
+    background-color:blueviolet;
+    position:relative;
+    bottom:100px;
+    left:100px;
+}
+.third-div2 {
+    background-color:darkolivegreen;
+    position: relative;
+    bottom:200px;
+    left:200px;
+}
+
+
+
+.first-div3{
+    background-color: cadetblue;
+    position:absolute;
+    right: 0;
+    z-index: 1;
+   
+  
+}
+
+.second-div3 {
+    background-color:blueviolet;
+    position:absolute;
+    right: 100px;
+    bottom: -900px;
+    z-index: 0;
+
+}
+.third-div3 {
+    background-color:darkolivegreen;
+    position: absolute;
+    right: 200px;
+    bottom: -1000px;
+    z-index: -1;
+}
