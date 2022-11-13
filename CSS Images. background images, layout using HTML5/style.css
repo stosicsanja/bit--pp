@@ -1,0 +1,22 @@
+.pic-one{
+    height: 200px;
+    float: right;
+}
+.pic-two{
+     width: 200px;
+     display: block;
+     margin: 0 auto;
+}
+.pic-third{
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+body{
+   /* background-position:100% 0;*/
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT6Y0_o18OI_lQkgg4q64wkf66oe52MnxN0Q&usqp=CAU");
+}
