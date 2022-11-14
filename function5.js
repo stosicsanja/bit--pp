@@ -219,6 +219,8 @@ by 1 and by itself).
 Input: 17 | 15
 Output: true | false*/
 
+// KOMENTAR: Brojevi 15 i 169 nisu prosti (PRIME) brojevi, a kod tebe bi se ispisalo da jesu. Sta mislis zasto? 
+
 function prime(num) {
    let root = Math.ceil(Math.sqrt(num))
    console.log(root)
@@ -241,14 +243,21 @@ console.log(prime(41));
 // Output: true | false | true
 function isPalindrome(str)
 {
+ 
     let reverse =false;
-    reverse=str.split('').reverse().join('');
+  ///////////////////////
+   // KOMENTAR: sta pokusavas tacno ovde???
+  /////////////////////// 
+  reverse=str.split('').reverse().join('');
     if(reverse==str)
     {
     reverse=true;
     }
 return reverse;
 }
+////////////////////
+// KOMENTAR: Zadatak ne radi. Probaj sa "ana voli milovana", ili sa "a nut for a jar of tuna". Znas li zasto ne radi?
+///////////////////
 console.log(isPalindrome("eye"));
 /*
 12. Write a program that calculates the greatest common divisor of two integers. Note: The
@@ -315,7 +324,7 @@ function samoglasnici(string) {
   }
   return counter
 } 
-
+// KOMENTAR: A gde je broj suglasnika?
 console.log(samoglasnici("Nekistring"))
 
 // 4. Kreirati funkciju koja prihvata array, a na izlazu ispisuje niz koji sadrži tipove
