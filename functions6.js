@@ -4,6 +4,9 @@
 "use strict"
 
 
+//KOMENTAR: Zadatak nije dobro uradjen jer pise da se lista rotira za K elemenata.
+// To znaci da je jedan od ulaznih parametara K, broj mesta za rotaciju.
+// Uz tu ispravku ce biti tacan
 function rotate(arr = []) {
     let newArr = arr.slice(0, 2);
     let restArr = arr.slice(2);
@@ -178,8 +181,8 @@ printed as:
 *********
 * Hello *
 * World *
-* in *
-* a *
+* in    *
+* a     *
 * frame *
 **********/
 function frame(array) {
@@ -203,3 +206,7 @@ function frame(array) {
 
 
 console.log(frame(["Hello", "World", "in", "a", "frame"]));
+
+
+// KOMENTAR: Ovaj zadatak verovatno nisi dobro iskopirala, ne radi kako je ocekivano. Sta nije dobro? Sam okvir od zvezdica.
+// Uporedi sa mojim zadatkom koji sam uradio na casu kako se ispisuje, videces razliku.
