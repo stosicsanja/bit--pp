@@ -1,0 +1,88 @@
+$active: yellow;
+$visited: orange;
+$color: green;
+$underline-none: none;
+
+$important: bold; 
+
+/* PSEUDO-CLASSES*/
+#first a {
+    text-decoration: $underline-none; 
+    &:active {
+      background-color: $active;
+    }
+ 
+}
+#second a{
+   
+    text-decoration: $underline-none; 
+    &:visited{
+        background-color: $visited;
+      }
+}
+#third a{ 
+   
+    text-decoration: $underline-none; 
+    &:link {
+        background-color: $color;
+      }
+}
+#four a {
+    text-decoration: $underline-none; 
+   font-weight: $important
+}
+
+/*DIRECTIVES-FOR*/
+@for $i from 1 through 4 {
+    .item-#{$i} {
+        font-size: 16px * $i;
+    }
+}
+
+/*DIRECTIVES-IF*/
+@mixin directive ($integer) {
+    @if $integer==1 {
+        background-color: blueviolet;
+    }
+    @else if $integer==2 {
+        background-color:brown;
+    }
+    @else if $integer==3 {
+        background-color:aqua;
+    }   
+    @else if $integer==4 {
+        background-color:crimson;
+    }    
+    
+}
+
+.item-1 {
+    @include directive(2)
+}
+
+
+/*FUNCTIONS*/
+
+$content-width: 50px;
+$border-width:2px;
+
+@function content-width($number) {
+    @return $number * $content-width - $border-width
+}
+
+
+#first-p {
+    width: content-width(5);
+}
+ 
+
+@function table-width ($col-w,$row-w)
+{
+    @return $col-w*$row-w
+}
+
+
+table{
+    border: 2px solid black;
+    width: table-width(50px, 12);
+}

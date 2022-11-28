@@ -1,0 +1,58 @@
+/* PSEUDO-CLASSES*/
+#first a {
+  text-decoration: none;
+}
+#first a:active {
+  background-color: yellow;
+}
+
+#second a {
+  text-decoration: none;
+}
+#second a:visited {
+  background-color: orange;
+}
+
+#third a {
+  text-decoration: none;
+}
+#third a:link {
+  background-color: green;
+}
+
+#four a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*DIRECTIVES-FOR*/
+.item-1 {
+  font-size: 16px;
+}
+
+.item-2 {
+  font-size: 32px;
+}
+
+.item-3 {
+  font-size: 48px;
+}
+
+.item-4 {
+  font-size: 64px;
+}
+
+/*DIRECTIVES-IF*/
+.item-1 {
+  background-color: brown;
+}
+
+/*FUNCTIONS*/
+#first-p {
+  width: 248px;
+}
+
+table {
+  border: 2px solid black;
+  width: 600px;
+}/*# sourceMappingURL=style.css.map */
