@@ -248,6 +248,8 @@ function isPalindrome(str)
   ///////////////////////
    // KOMENTAR: sta pokusavas tacno ovde???
   /////////////////////// 
+  
+  //Odghovor:
   reverse=str.split('').reverse().join('');
     if(reverse==str)
     {
