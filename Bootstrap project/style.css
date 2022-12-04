@@ -1,0 +1,45 @@
+.nav {
+  background-color: red;
+}
+.nav a {
+  font-weight: 500;
+  color: white;
+}
+
+img {
+  width: 50%;
+}
+
+.col-md-4 .bg-danger,
+.col-md-4 .bg-dark,
+.col-md-4 .bg-warning,
+.col-md-4 .bg-success {
+  position: relative;
+  padding-bottom: 250px;
+}
+.col-md-4 .bg-danger h1,
+.col-md-4 .bg-dark h1,
+.col-md-4 .bg-warning h1,
+.col-md-4 .bg-success h1 {
+  font-size: 20px;
+  position: absolute;
+  top: 45%;
+  left: 38%;
+  color: aliceblue;
+}
+
+.aside {
+  background: rgb(245, 189, 35);
+}
+
+.first-main {
+  width: 100%;
+}
+
+footer {
+  background: rgb(48, 48, 66);
+  color: #fff;
+}
+footer .container {
+  padding-top: 11px;
+}/*# sourceMappingURL=style.css.map */
