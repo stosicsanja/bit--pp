@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Lato-regular";
+  src: url("/Project_Bootstrap/Project/assets/fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Lato-bold";
+  src: url("/Project_Bootstrap/Project/assets/fonts/Lato/Lato-Bold.ttf");
+  font-weight: bold;
+}
+.shape {
+  width: 10rem;
+  display: flex;
+}
+.shape .line {
+  width: 10rem;
+  height: 0.2rem;
+  background-color: white;
+}
+.shape .star {
+  margin: -11px 10px 10px;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato-regular";
+}
+
+.navbar {
+  background-color: #2c3e50;
+}
+.navbar .container-sm {
+  padding-left: 0;
+}
+.navbar button {
+  background-color: #18bc9c;
+  font-weight: bolder;
+}
+.navbar button:hover {
+  background-color: #2c3e50;
+}
+
+header {
+  background-color: #18bc9c;
+}
+header h2 {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+#portfolio h2 {
+  font-weight: bolder;
+}
+
+main h2 {
+  font-weight: 900;
+}
+
+#about {
+  background-color: #18bc9c;
+}
+#about h2 {
+  font-weight: bolder;
+}
+
+#contact .btn {
+  background-color: #18bc9c;
+}
+#contact h2 {
+  font-weight: bolder;
+  color: #2c3e50;
+}
+
+footer {
+  background-color: #2c3e50;
+}
+footer h5 {
+  font-weight: bolder;
+}
+footer a {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin-left: 0.3em;
+}/*# sourceMappingURL=style.css.map */

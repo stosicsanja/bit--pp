@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: "Lato-regular";
+    src: url("/assets/fonts/Lato/Lato-Regular.ttf");
+  }
+  @font-face {
+    font-family: "Lato-bold";
+    src: url("/assets/fonts/Lato/Lato-Bold.ttf");
+    font-weight: bold;
+  }
+
+@import "shape";
+@import "variables";
+@import "navbar";
+@import "header";
+@import "about";
+@import "contact";
+@import "portfolio";
+@import "footer";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Lato-regular";
+}
+
+
+
+
+
+
+

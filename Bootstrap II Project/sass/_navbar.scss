@@ -1,0 +1,13 @@
+.navbar {
+    background-color: $blueish;
+    .container-sm {
+      padding-left: 0;
+    }
+    button {
+      background-color: $greenish;
+      font-weight: bolder;
+      &:hover{
+        background-color: #2c3e50;
+      }
+    }
+  }
