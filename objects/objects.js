@@ -19,6 +19,12 @@ let film = {
 // repository, a method that checks if the project is written in JavaScript as well as a
 // method that checks if the project is in development or not.
 
+
+// Komentar: Svidja mi se sto si uradila da ti git repository bude funkcija iako se ne trazi.
+// Gde je metod koji ispisuje repository? :)
+// Sta su ti tacno propertiji test1 i test2?
+// Fali funkcija koja ispituje da li je program ispisan u JavaScript jeziku, kao i funkcija koja proverava da li je u developmentu ili ne.
+
 let project = {
     description: "Project",
     programming_language: "Java Script",
@@ -60,6 +66,12 @@ preparation.
 ○ Add a method that changes the type of cuisine to the given value.
 ○ Add a method that delete a given ingredient from the list of ingredients.
 */
+
+
+
+// KOMENTAR: gde je metoda koja menja tip kuhinje u vrednost koju mu ti zadas u parametru funkcije? :) 
+
+
 
 let recipe ={
     name: "Pizza",
@@ -105,6 +117,12 @@ let recipe ={
 //   "quantity": 1,
 //   "price": 1.50
 // }
+
+
+//KOMENTAR: Ovde si promasila poentu zadatka. Funkcija treba da prima kao ulazni parametar NIZ objekata, pa da tek onda unutar nje racunas sve sto treba.
+// Funkcija treba samo da ti vraca rezultat, ne da se dovijas kako nesto treba da saberes u console.log
+
+
 
 function Products(product, quantity, price) {
         this.product = product,
@@ -257,6 +275,9 @@ const rgbToHex = (r, g, b) => '#' + [r, g, b].map(x => {
 // makeChange(92) ➞ { "q": 3, "d": 1, "n": 1, "p": 2 }
 
 
+//KOMENTAR: Gde je ovde zadatak? :D 
+
+
 
 // 7.	Create a function that takes an array of objects like { name: "John", notes: [3, 5, 4]} and returns an array of objects like { name: "John", avgNote: 4 }. If student has no notes (an empty array) then let's assume avgNote: 0.
 // Examples:
@@ -285,8 +306,18 @@ function notesAvg(arr) {
 console.log(notesAvg(nameAndNotes))
 
 
-// 8.	Given an object with students and the grades that they made on the tests that they took, determine which student has the best Test Average. The key will be the student's name and the value will be an array of their grades. You will only have to return the student's name. You do not need to return their Test Average.
+// 8.	Given an object with students and the grades that they made on the tests that they took, determine which student has the best Test Average.
+//The key will be the student's name and the value will be an array of their grades. You will only have to return the student's name.
+//You do not need to return their Test Average.
 // getBestStudent([{  name: ‘John’, grades: [100, 90, 80]}, {name: ‘Bob’, grades: [100, 70, 80]}…]) ➞ "John" // John's avg
 
 // evo predlazem da nam objasnis ovaj zadatak :D
 // kako da pristupim nizu koji je u objektu koji je u nizu..?
+
+//KOMENTAR: U primeru ti je dat niz objekata. Dakle, prvo imas niz objekata (objekat u ovom slucaju cine ime i niz ocena za to ime).
+// Dalje, posto je u pitanju niz objekata - mozes koristiti sledeci nacin. 
+// Krenes kroz klasicnu for petlju i racunas prosek za i-ti objekt, nesto kao niz[i].grades. Taj trenutni prosek ces smestiti u temp promenjivu.
+// Imas i globalnu promenjivu prosek koju deklarises na pocetku, i stavis vrednost 0. Napravis i globalnu promenjivu koju nazoves da bude ime najboljeg.
+// Poredis da li je trenutni prosek veci od globalnog. Ako jeste onda globalni prosek dobija vrednost trenutnog, ime najboljeg smestis da bude trenutno ime.
+// Zavrsis petlju do kraja, ispises globalno ime najboljeg.
+// Savet: bukvalno sebi izdeklamuj svaki put sta se trazi, na glas. Ako treba i 3 puta. Uradices tako 50% zadatka, jer ce ti pasti na pamet ideja kako da uradis :) 
