@@ -183,3 +183,4 @@ if (confirm) {
     console.log(date)
     
    
+// Imam samo jedno pitanje: da li ti je stranica djuskala kada si pokrenula sve ove funkcije u skripti? :D 
