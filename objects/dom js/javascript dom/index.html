@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+   
+
+</head>
+<body>
+
+       <!-- Selecting One/Multiple Elements
+Create two unordered lists on the page.
+Create a function that selects the second list and applies a class that sets some
+background color to it.
+Create a second function that, when triggered, selects all &lt;li&gt; elements on the
+page.
+The function also sets a class that sets some bg color to every &lt;li&gt; element.
+Create one more unordered list and one more function
+The function​ should select only &lt;li&gt; elements from that last list
+Each &lt;li&gt; element should get a class that sets some bg color and transforms the
+text to uppercase.-->
+
+<ul class="ul-first" id="ul-f">
+    <li>First</li>
+    <li>First</li>
+</ul>
+<ul class="ul-second">
+    <li class="li-sec-f">Second</li>
+    <li>Second</li>
+</ul>
+
+<ul>
+    <li>Third</li>
+    <li class="li-third">Third</li>
+</ul>
+
+
+<!--
+    Traversing
+Create two unordered lists.
+Each list should be wrapped in a div element.
+One &lt;li&gt; element in the second list should have a class “active”, which sets its
+background color.
+Create a function that selects the &lt;li&gt; element with class “active”.
+Remove the class from that element, and then select the first &lt;li&gt; element in the
+first unordered list using node relations.
+Apply class to that newly selected &lt;li&gt; element
+-->
+
+<div>
+    <ul>
+        <li>Fourth</li>
+        <li>Fourth</li>
+    </ul>
+  
+</div>
+<div>
+    <ul>
+        <li class="active">Fourth</li>
+        <li>Fourth</li>
+    </ul>
+</div>
+
+
+<!--Access/Update Text Node
+Create an unordered list containing &lt;li&gt; items that represent navigation.
+Create a function that takes text from one of the &lt;li&gt; elements and presents it on
+screen using alert.
+
+Create one more function.
+The function should take some text as an argument.
+The function should select the last &lt;li&gt; element in the list and replace its text with
+text passed as the function argument.-->
+
+<nav>
+    <ul>
+        <li>Nav item 1</li>
+        <li>Nav item 2</li>
+    </ul>
+</nav>
+<!--
+InnerHTML
+Do the following exercise in two ways: using DOM manipulation methods and
+using innerHTML.
+Create a function that is used for building a dropdown/select element.
+It first builds a dropdown and then adds it to the DOM.
+The function takes two arguments: the first is an array of strings and the second
+is a DOM node to which the dropdown will be added.
+Create options that correspond to items in the passed array and add them to the
+select element.
+Add the whole dropdown list to DOM .
+Use this function to create two selects on the page.
+The first select should be appended to the first div on the page.
+The second select should be appended to the last div on the page.
+-->
+
+<div class="dropdown-first">
+   
+<label for="framework">Which framework?</label>
+<select name="" id="lists-first">
+       <!--
+    <option value="one">React</option>
+    <option value="two">Angular</option>
+    <option value="three">Vue</option>
+    -->
+</select>
+
+</div>
+
+
+<div class="dropdown-second">
+   
+    <label for="framework">Your hobi is:</label>
+    <select name="" id="lists-second">
+     
+    </select>
+   
+    </div>
+
+   <!-- Attributes
+    Create a form that contains multiple input elements with labels.
+    Some of those elements should be required.
+    Create a function that validates the form.
+    The function checks each input element that belongs to the form.
+    If the element has the required attribute and no data, it should get red borders.
+    -->
+<br>
+<br>
+    <form action="" class="form" onclick="validateForm()" >
+        <label for="name">First name</label>
+        <input name="name" required type="text" id="name"  >
+        <label for="s-name">Second name</label>
+        <input  name="s-name" required  type="text" id="s-name">
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+
+</body>
+<script src="main.js"></script>
+</html>

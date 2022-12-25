@@ -1,0 +1,20 @@
+.ul-second-bg {
+    background-color: blueviolet;
+    font-size: 20px;
+}
+
+.li-sec-f-col {
+    background-color: chocolate;
+}
+
+/*#ul-f {
+    background-color: brown;
+}*/
+
+.li-third-bg-upper {
+    background-color: coral;
+    text-transform: uppercase;
+}
+.active{
+    background-color: darkgreen;
+}
