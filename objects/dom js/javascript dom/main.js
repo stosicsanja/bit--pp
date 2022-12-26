@@ -53,7 +53,7 @@ divsToAdd.innerHTML = lists
 
 selectList(["React", "Angular", "Vue"], ".dropdown-first")
 
-function selectList(options, divsToAdd) {
+/*function selectList(options, divsToAdd) {
   let lists = document.getElementById("lists-second")
   console.log(lists)
   let option = ""
@@ -66,9 +66,8 @@ lists.innerHTML = option
 divsToAdd.innerHTML = lists
 }
 selectList(["Music", "Play football", "Bycling"], ".dropdown-second")
+*/
 
-// druga radi a prva ne
-// dok nisam napravila drugu, prva je radila  :D
 
 function validateForm() {
 
