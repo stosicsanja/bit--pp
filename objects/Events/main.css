@@ -1,0 +1,61 @@
+.button-div {
+  background-color: wheat;
+  width: 500px;
+  height: 300px;
+}
+
+.div-bg {
+  background-color: navy;
+  width: 500px;
+  height: 300px;
+}
+#button {
+  background: brown;
+  display: flex;
+  color: wheat;
+  margin: 0 auto;
+}
+
+#button-off {
+  background: yellow;
+  display: flex;
+  color: wheat;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.background img{
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.background #player {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+}
+/*
+.game-bg #mario-bg {
+  position: relative;
+  width: 500px;
+  height: 200px;
+}
+
+#mario {
+  position: absolute;
+  top: 110px;
+  left: 200px;
+  z-index: 999;
+  width: 50px;
+  height: 50px;
+}
+img {
+  width: 200px;
+  height: 100px;
+}
+#only {
+  width: 300px;
+}
