@@ -1,48 +1,24 @@
 .button-div {
-  background-color: wheat;
+ display: grid;
+ justify-content: center;
+ align-items: center;
   width: 500px;
   height: 300px;
 }
+#button-toggle {
 
+ width: 150px;
+ height: 60px;
+
+}
 .div-bg {
   background-color: navy;
   width: 500px;
   height: 300px;
 }
-#button {
-  background: brown;
-  display: flex;
-  color: wheat;
-  margin: 0 auto;
-}
-
-#button-off {
-  background: yellow;
-  display: flex;
-  color: wheat;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-
- #field{
-  position: relative;
-  width: 700px;
-  height: 500px;
-}
- #player {
-  position: absolute;
-  top: 400px;
-  left: 40px;
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-}
 
 
-img {
-  width: 200px;
-  height: 100px;
-}
-#only {
-  width: 300px;
-}
+
+
+
+
