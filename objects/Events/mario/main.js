@@ -15,11 +15,12 @@ function animation(e) {
          mario.style.left = moveBy + "px"
      }
 }
+
 game_bg.addEventListener("keyup", animation)
 */
 
 function animation() {
-    game_bg.addEventListener("keydown", (e) => {
+    game_bg.addEventListener("keyup", (e) => {
         console.log(e)
          switch (e.key) {
              case "ArrowLeft":
@@ -30,7 +31,6 @@ function animation() {
                  break;
             
          }
-     
      }
      )    
 }

@@ -5,12 +5,13 @@
   width: 500px;
   height: 300px;
 }
-#button-toggle {
 
+#button-toggle {
  width: 150px;
  height: 60px;
-
 }
+
+
 .div-bg {
   background-color: navy;
   width: 500px;

@@ -8,14 +8,16 @@ function movePlayer (event) {
 
     let x = event.offsetX
     let y = event.offsetY
-    console.log(x,y)
+  //  console.log(x,y)
     player.style.left = `${x-10}px`
     player.style.top = `${y-10}px`
-
 }
-let btn_stop = document.getElementById("stop-move")
-btn_stop.addEventListener("click",() => {
-    field.removeEventListener("click", movePlayer)
-})
 
-//field.addEventListener("click", movePlayer)
+
+field.addEventListener("click", movePlayer)
+function btnStop() {
+   field.removeEventListener("click", movePlayer)
+}
+
+
+

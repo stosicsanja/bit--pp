@@ -10,7 +10,7 @@ image.addEventListener("click", (e) => {
     if (e.target.style.width==="200px") {
         e.stopPropagation()
     } else {
-        e.target.style.border= "3px solid red"
+        e.target.style.border= "1px solid red"
     }
    
     })
