@@ -12,7 +12,6 @@ image.addEventListener("click", (e) => {
     } else {
         e.target.style.border= "1px solid red"
     }
-   
     })
 
     image.addEventListener("click", (e)=> {
