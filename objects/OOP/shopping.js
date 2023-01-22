@@ -1,3 +1,6 @@
+// ZA VEZBANJE: Probaj sve ove zadatke da preradis da budu klase. Mislim da ce ti znaciti.
+
+
 
 function Product (name, price, expiration_date) {
 this.product_id = Math.floor(Math.random()*90000) + 10000;
