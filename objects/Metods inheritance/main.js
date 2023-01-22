@@ -73,6 +73,11 @@ console.log(manager_1.changeDepartment("back-end dev"))
 console.log(manager_1.getDepartment())
 */
 
+
+
+
+// KOMENTAR: Gde je parent funkcija App? :) 
+
 function WebApp(name, url, technogies, licence, stars) {
     this.name = name
     this.url = url
