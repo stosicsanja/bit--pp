@@ -1,3 +1,5 @@
+// KOMENTAR: Probaj ovo isto sad da uradis sa klasama :) 
+
 "use strict"
 
 function Person(name,surname) {
