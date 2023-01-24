@@ -72,15 +72,37 @@ console.log(manager_1.getDepartment())
 console.log(manager_1.changeDepartment("back-end dev"))
 console.log(manager_1.getDepartment())
 */
-
-function WebApp(name, url, technogies, licence, stars) {
-    this.name = name
-    this.url = url
-    this.technogies = technogies
-    this.licence = licence
-    this.stars = stars
+function App(name, licence, stars) {
+  this.name = name
+  this.licence = licence
+  this.stars = stars
 }
 
+App.prototype.isCCLicence = function () {
+    if (this.licence === "CC") {
+        return "Yes, it is CC licence"
+    } else return "No, it is not CC licence"
+  
+} 
+App.prototype.like = function () {
+return this.stars = (this.stars+0.01)
+  //return this.stars++
+  
+} 
+
+App.prototype.showStars = function () {
+    return this.stars.toFixed(2)
+ 
+    
+  } 
+function WebApp(name, url, technogies, licence, stars) {
+    App.call(this, name, licence, stars)
+    this.url = url
+    this.technogies = technogies
+}
+
+WebApp.prototype = Object.create(App.prototype)
+WebApp.prototype.constructor = WebApp
 
 WebApp.prototype.getData = function () {
     return this.name + " " + this.url + " " +this.technogies + " " +this.licence + " " + this.stars 
@@ -93,23 +115,7 @@ WebApp.prototype.reactBased = function () {
   
 } 
 
-WebApp.prototype.isCCLicence = function () {
-    if (this.licence === "CC") {
-        return "Yes, it is CC licence"
-    } else return "No, it is not CC licence"
-  
-} 
-WebApp.prototype.like = function () {
-return this.stars = (this.stars+0.01)
-  //return this.stars++
-  
-} 
 
-WebApp.prototype.showStars = function () {
-    return this.stars.toFixed(2)
- 
-    
-  } 
 
 let webApp_1 = new WebApp("facebook", "http://www.facebook.com", "react", "CC0", 4.0 )
 console.log(webApp_1.getData())
@@ -122,11 +128,13 @@ webApp_1.like()
 console.log(webApp_1.showStars())
 
 function MobileApp(name, platforms, licence, stars) {
-    this.name = name
+    App.call(this, name, licence, stars)
     this.platforms = platforms
-    this.licence = licence
-    this.stars = stars
 }
+
+MobileApp.prototype = Object.create(App.prototype)
+MobileApp.prototype.constructor = MobileApp
+
 MobileApp.prototype.getData = function () {
     return this.name + " " + this.platforms + " " +this.licence + " " + this.stars 
 } 
@@ -137,23 +145,7 @@ MobileApp.prototype.forAndroid = function () {
     } else return "No, Android is not used"
   
 } 
-MobileApp.prototype.isCCLicence = function () {
-    if (this.licence === "CC") {
-        return "Yes, it is CC licence"
-    } else return "No, it is not CC licence"
-  
-} 
-MobileApp.prototype.like = function () {
-return this.stars = (this.stars+0.01)
-  //return this.stars++
-  
-} 
 
-MobileApp.prototype.showStars = function () {
-    return this.stars.toFixed(2)
- 
-    
-  } 
 
 let mobileApp_1  = new MobileApp("facebook", "android", "CC0", 3.9 )
 console.log(mobileApp_1.getData())
