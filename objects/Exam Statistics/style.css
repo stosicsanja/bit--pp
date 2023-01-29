@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+.passed, .failed {
+    width: 300px;
+    height: 34px;
+    margin: 3px;
+    margin-bottom: 10px;
+}
+.passed ul {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+}
+.failed ul{
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between
+}
+
+.input_part {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.add{
+    color: firebrick;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+  .lists {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .list{
+    flex-basis: 50%;
+    margin-left: 10px;
+  }
+  .passed_list {
+color: green;
+text-align: center;
+  }
+  .failed_list {
+    color: red;
+    text-align: center;
+      }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px auto;
+    background-color:darkgray;
+  }
+
+  td{
+    font-size: 15px;
+
+  }

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="main">
+    <h2 class="title">Exam Statistics June</h2>
+    <p class="total">Total students : </p>
+    <div class="passed">
+        <ul class="passed-list">
+            <li >PASSED</li>
+            <li class="number-of-passed">0</li>
+        </ul> 
+    </div>
+    <div class="failed">
+        <ul>
+        <li >FAILED</li>
+        <li class="number-of-failed">0</li>
+        <li class="percentage-of-failed">%</li>
+        </ul>
+
+    </div>
+</div>
+
+    <div class="input_part">
+        <form action="">
+            <select name="" class="language">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Pyton">Pyton</option>
+                <option value="PHP">PHP</option>
+            </select>
+            <input class="name" type="text" placeholder="Name surname">
+            <input type="text" class="grade" placeholder="Grade">
+            <button class="add">ADD</button>
+    </form>
+    </div>
+
+   <div class="lists">
+    <div class="list passed_list">PASSED
+    <table id="display_passed">
+        <tr>
+        <th>Language</th>
+        <th>Name</th>
+        <th>Grade</th>
+    </tr>
+    </table>
+</div>
+
+<div class="list failed_list">FAILED
+    <table id="display_failed">
+        <tr>
+            <th>Language</th>
+            <th>Name</th>
+            <th>Grade</th>
+    </tr>
+    </table>
+    
+</div>
+</div>
+
+<script src="/js files/exam.js"></script>
+<script src="/js files/main.js"></script>
+</body>
+</html>

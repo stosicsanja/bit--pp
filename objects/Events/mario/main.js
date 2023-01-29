@@ -1,4 +1,5 @@
-let game_bg = document.getElementById("mario-bg")
+
+//let game_bg = document.getElementById("mario-bg")
 let mario = document.getElementById("mario")
 let moveBy = 10
 
@@ -18,19 +19,45 @@ function animation(e) {
 
 game_bg.addEventListener("keyup", animation)
 */
+/*
+window.addEventListener("load" , () => {
+    mario.style.position = "absolute"
+    mario.style.left = 300
+    mario.style.top = 340
+})
 
-function animation() {
-    game_bg.addEventListener("keyup", (e) => {
+ window.addEventListener("keyup", (e) => {
         console.log(e)
-         switch (e.key) {
-             case "ArrowLeft":
-                 mario.style.left = parseInt(mario.style.left) - moveBy + "px"
-                 break;
-             case "ArrowRight":
-                 mario.style.left = parseInt(mario.style.left) + moveBy + "px"
-                 break;
-            
+        if (e.key) { 
+         mario.style.left = parseInt(mario.style.left) + moveBy + "px"
+             
          }
      }
-     )    
+     ) 
+
+let x = 0
+
+window.onload = function() {
+    let mario = document.getElementById("mario")
+    setInterval (function (){
+        x++
+        mario.style.left = x
+    },10)
+    
 }
+*/
+
+function move() {
+    let mario = document.getElementById("mario")
+    let moveBy = 0
+    let anim = setInterval(animate,5)
+
+    function animate() {
+        moveBy++
+        mario.style.left = moveBy + "px"
+      
+    }
+
+
+}
+
