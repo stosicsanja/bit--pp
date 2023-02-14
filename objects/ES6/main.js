@@ -194,7 +194,6 @@ function namesOlderThan40(array) {
       element.age>40
     
     )
-
 }
 
 console.log(namesOlderThan40(persons))
